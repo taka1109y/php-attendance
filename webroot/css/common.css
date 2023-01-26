@@ -1,0 +1,137 @@
+@charset "utf8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    padding-top: 50px;
+}
+
+.errMsg{
+    color: red;
+}
+
+header{
+    padding: 0 15px;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    background-color: #31c4dc;
+    color: #fff;
+    display:flex;
+    align-items:center;
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
+}
+
+header #showDatetime{
+    margin:0 30px 0 auto;
+}
+header #staffName{
+    margin: 0 auto;
+    padding-right: 50px;
+    font-size: 2em;
+}
+
+#dateTimeContiner{
+    width: 100%;
+    height: 250px;
+    background-color: #186878;
+    text-align: center;
+    display: table;
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 50; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
+}
+
+#dateTimeContiner p{
+    color: #fff;
+}
+
+#dtView{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#topDate{
+    font-size: 25px;
+}
+
+#topTime{
+    font-size: 80px;
+    font-weight: 550;
+}
+
+main{
+    padding-top: 250px;
+    width: 100%;
+    height: auto;
+}
+
+#mainWrapp{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+    overflow: auto;
+}
+
+#mainWrapp a:not(.att){
+    margin-top: 30px;
+    width: 20%;
+    height: auto;
+    padding: 30px;
+    border: solid 12px #02cacd;
+    border-radius: 30px;
+    text-align: center;
+    color: #02cacd;
+    font-size: 1.5em;
+    font-weight: 550;
+    white-space: nowrap;
+}
+
+#mainWrapp #nolink{
+    border: solid 12px #FFF;
+}
+
+#staffWrapp img{
+    width: 50%;
+    height: auto;
+}
+
+
+.att{
+    text-align: center;
+}
+.att p{
+    margin-top: 20px;
+    color: #02cacd;
+    font-size: 2em;
+    font-weight: 550;
+}
+#attWrapp{
+    margin-top: 30px;
+    width: 30%;
+    height: auto;
+    text-align: center;
+}
+#attIcon{
+    width: 222px;
+    height: 223px;
+    border: solid 12px #02cacd;
+    border-radius: 30px;
+    text-align: center;
+    color: #02cacd;
+}
+#attIcon img{
+    width: 100%;
+    height: 100%;
+}
