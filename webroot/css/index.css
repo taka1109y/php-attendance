@@ -1,0 +1,90 @@
+@charset "utf8";
+
+body {
+    background: #ddd;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.errMsg{
+    padding-left: 12px;
+}
+
+.login {
+    width: 400px;
+    margin: 16px auto;
+    font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header, .login p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.login-header {
+    margin-top: 100px;
+    height: auto;
+    background: #31c4dc;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.login-container {
+    height: auto;
+    background: #fff;
+    padding: 12px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+    height: auto;
+    padding: 12px;
+}
+
+.login input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-width: 1px;
+    border-style: solid;
+    padding: 12px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+}
+
+
+.login input[type="password"] {
+    background: #fff;
+    border-color: #bbb;
+    color: #555;
+}
+
+/* Text fields' focus effect */
+.login input[type="password"]:focus {
+    border-color: #888;
+}
+
+.login input[type="submit"] {
+    font-size: 1.2em;
+    background: #31c4dc;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.login input[type="submit"]:hover {
+    background: #186878;
+}
+
+/* Buttons' focus effect */
+.login input[type="submit"]:focus {
+    border-color: #31c4dc;
+}
